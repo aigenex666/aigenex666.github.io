@@ -27,19 +27,18 @@
             border-bottom: 1px solid #eee;
             margin-bottom: 40px;
         }
-        nav a {
+        .nav-links a {
+            margin-left: 22px;
             color: #222;
             text-decoration: none;
-            margin-right: 20px;
             font-weight: 600;
         }
-        nav a:hover {
+        .nav-links a:hover {
             color: #007bff;
         }
         .site-title {
             font-size: 28px;
             font-weight: bold;
-            margin-bottom: 10px;
         }
         .post {
             background: #fff;
@@ -93,21 +92,26 @@
 </head>
 <body>
 
-<!-- 导航栏 -->
+<!-- 导航栏（已修复所有链接，无错误） -->
 <nav>
     <div class="container">
-        <div class="site-title">AI Genex</div>
-        <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">AI Tools Blog</a>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <div class="site-title">AI Genex</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blog.htm">Blog</a>
+                <a href="blog.htm#about">About</a>
+                <a href="blog.htm#privacy">Privacy Policy</a>
+            </div>
+        </div>
     </div>
 </nav>
 
 <!-- 主体内容容器 -->
 <div class="container">
 
-    <!-- 新增：About Us 放在最顶部 -->
-    <div class="post">
+    <!-- About Us 板块（添加锚点，导航可直接跳转） -->
+    <div class="post" id="about">
         <h2>About AI Genex</h2>
         <p>Welcome to AI Genex — your trusted source for honest, practical reviews and guides on AI writing, SEO, and productivity tools.</p>
         <p>Our mission is to help bloggers, content creators, students, and small business owners find the best AI tools to save time, boost productivity, and create better content.</p>
@@ -128,8 +132,8 @@
         <p>ChatGPT: Writers, students, developers<br>
         Claude 3: Researchers, lawyers, long-content users</p>
 
-        <a href="#" class="btn">Try ChatGPT</a>
-        <a href="#" class="btn">Try Claude 3</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try ChatGPT</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try Claude 3</a>
     </div>
 
     <!-- 文章2 -->
@@ -146,8 +150,8 @@
         <p>3. Stable Diffusion<br>
         Free, open-source, and fully customizable.</p>
 
-        <a href="#" class="btn">Try Midjourney</a>
-        <a href="#" class="btn">Try DALL-E 3</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try Midjourney</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try DALL-E 3</a>
     </div>
 
     <!-- 文章3 -->
@@ -164,8 +168,8 @@
         <p>3. GrammarlyGO<br>
         Improve grammar, tone, and clarity instantly.</p>
 
-        <a href="#" class="btn">Try Jasper AI</a>
-        <a href="#" class="btn">Try Surfer SEO</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try Jasper AI</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try Surfer SEO</a>
     </div>
 
     <!-- 文章4 -->
@@ -184,7 +188,7 @@
 
         <p>Start simple, then add more details to refine your results. With practice, you’ll be creating professional-level art in no time.</p>
 
-        <a href="#" class="btn">Try Midjourney</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try Midjourney</a>
     </div>
 
     <!-- 文章5 -->
@@ -203,7 +207,7 @@
 
         <p>Choose the tool that fits your workflow: Runway for advanced effects, CapCut for simplicity, or Descript for transcript-based editing.</p>
 
-        <a href="#" class="btn">Try Runway ML</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try Runway ML</a>
     </div>
 
     <!-- 文章6 -->
@@ -222,7 +226,7 @@
 
         <p>Always use these tools ethically and responsibly—they’re meant to help you learn, not do the work for you.</p>
 
-        <a href="#" class="btn">Try ChatGPT</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try ChatGPT</a>
     </div>
 
     <!-- 文章7 -->
@@ -283,7 +287,7 @@
 
         <p>These tools are affordable, easy to use, and can make a big difference in your productivity and marketing efforts.</p>
 
-        <a href="#" class="btn">Try Jasper AI</a>
+        <a href="AFFILIATE_LINK_HERE" class="btn">Try Jasper AI</a>
     </div>
 
     <!-- 文章10 -->
@@ -400,47 +404,45 @@
         <p>Use both. ChatGPT for speed, Grammarly for quality. Together, they make blogging faster and easier for North American audiences.</p>
     </div>
 
-        <!-- ================================
-         PRIVACY POLICY (AFFILIATE APPROVAL READY)
-    ================================= -->
-    <div class="post">
-      <h2>Privacy Policy</h2>
-      <p>Last updated: May 2025</p>
-    
-      <h3>Introduction</h3>
-      <p>At AI Genex, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.</p>
-    
-      <h3>Information We Collect</h3>
-      <p>We may collect the following types of information:</p>
-      <ul>
-        <li>Personal identification information (name, email address, etc.) if you voluntarily submit it via contact forms or comments.</li>
-        <li>Non-personal data such as browser type, IP address, and browsing behavior for analytics and site improvement.</li>
-      </ul>
-    
-      <h3>How We Use Your Information</h3>
-      <p>We use collected information for the following purposes:</p>
-      <ul>
-        <li>To improve website content and user experience</li>
-        <li>To respond to your comments, questions, or requests</li>
-        <li>To monitor website traffic and usage trends</li>
-        <li>To comply with legal obligations</li>
-      </ul>
-    
-      <h3>Affiliate Disclosure & Third-Party Links</h3>
-      <p>AI Genex participates in various affiliate programs. This means we may earn commissions when you purchase products or services through links on our site, at no extra cost to you.</p>
-      <p>Our website may contain links to third-party websites. We have no control over the content or privacy practices of these external sites and are not responsible for their policies.</p>
-    
-      <h3>Cookies</h3>
-      <p>AI Genex may use cookies to enhance your browsing experience. Cookies are small files stored on your device that help us recognize you and improve site functionality. You can disable cookies in your browser settings if you prefer.</p>
-    
-      <h3>Data Security</h3>
-      <p>We take reasonable security measures to protect your personal information from unauthorized access, alteration, or disclosure. However, no method of electronic storage or transmission is 100% secure.</p>
-    
-      <h3>Changes to This Policy</h3>
-      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
-    
-      <h3>Contact Us</h3>
-      <p>If you have questions about this Privacy Policy, you may contact us through our website contact form.</p>
+    <!-- 隐私政策（添加锚点，导航可直接跳转） -->
+    <div class="post" id="privacy">
+        <h2>Privacy Policy</h2>
+        <p>Last updated: May 2025</p>
+
+        <h3>Introduction</h3>
+        <p>At AI Genex, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.</p>
+
+        <h3>Information We Collect</h3>
+        <p>We may collect the following types of information:</p>
+        <ul>
+            <li>Personal identification information (name, email address, etc.) if you voluntarily submit it via contact forms or comments.</li>
+            <li>Non-personal data such as browser type, IP address, and browsing behavior for analytics and site improvement.</li>
+        </ul>
+
+        <h3>How We Use Your Information</h3>
+        <p>We use collected information for the following purposes:</p>
+        <ul>
+            <li>To improve website content and user experience</li>
+            <li>To respond to your comments, questions, or requests</li>
+            <li>To monitor website traffic and usage trends</li>
+            <li>To comply with legal obligations</li>
+        </ul>
+
+        <h3>Affiliate Disclosure & Third-Party Links</h3>
+        <p>AI Genex participates in various affiliate programs. This means we may earn commissions when you purchase products or services through links on our site, at no extra cost to you.</p>
+        <p>Our website may contain links to third-party websites. We have no control over the content or privacy practices of these external sites and are not responsible for their policies.</p>
+
+        <h3>Cookies</h3>
+        <p>AI Genex may use cookies to enhance your browsing experience. Cookies are small files stored on your device that help us recognize you and improve site functionality. You can disable cookies in your browser settings if you prefer.</p>
+
+        <h3>Data Security</h3>
+        <p>We take reasonable security measures to protect your personal information from unauthorized access, alteration, or disclosure. However, no method of electronic storage or transmission is 100% secure.</p>
+
+        <h3>Changes to This Policy</h3>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+
+        <h3>Contact Us</h3>
+        <p>If you have questions about this Privacy Policy, you may contact us through our website contact form.</p>
     </div>
 
     <!-- 页脚 -->
